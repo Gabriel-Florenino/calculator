@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body>
+  <header id="header">
+    <h1>Calclator</h1>
+    <section >
+      <p>THEME</p>
+      <section>
+        <p>1  2  3</p>
+        <button id="button">
+          <p onclick="mudaColor()" id="pp">    </p>
+        </button>
+      </section>
+    </section>
+  </header>
+  <main>
+    <div id="screen">
+      <h1 id="screenCalc"></h1>
+    </div>
+    <div id="corp">
+      <sec class="tecla"onclick="insert(7)">
+        <button class="tec" id="7" value="7">7</button>
+      </sec>
+      <sec class="tecla" onclick="insert(8)">
+        <button class="tec" id="8" value="8">8</button>
+      </sec>
+      <sec class="tecla" onclick="insert(9)">
+        <button class="tec" id="9" value="9">9</button>
+      </sec>
+      <sec class="tecla" onclick="del()">
+        <button class="tec" id="reset" value="del">DEL</button>
+      </sec>
+      <sec class="tecla" onclick="insert(4)">
+        <button class="tec"  id="4" value="4">4</button>
+      </sec>
+      <sec class="tecla" onclick="insert(5)">
+        <button class="tec" id="5" value="5">5</button>
+      </sec>
+      <sec class="tecla" onclick="insert(6)">
+        <button class="tec" id="6" value="6">6</button>
+      </sec>
+      <sec class="tecla" onclick="insert(' + ')">
+        <button class="tec" id="11" value="12">+</button>
+      </sec>
+      <sec class="tecla" onclick="insert(1)">
+        <button class="tec" id="1" value="1">1</button>
+      </sec>
+      <sec class="tecla" onclick="insert(2)">
+        <button class="tec" id="2" value="2">2</button>
+      </sec>
+      <sec class="tecla" onclick="insert(3)">
+        <button class="tec" id="3" value="3">3</button>
+      </sec>
+      <sec class="tecla" onclick="insert('-')">
+        <button class="tec" id="12" value="13">-</button>
+      </sec>
+      <sec class="tecla" onclick="insert('.')">
+        <button class="tec" id="13" value="10">.</button>
+      </sec>
+      <sec class="tecla" onclick="insert(0)">
+        <button class="tec" id="14" value="0">0</button>
+      </sec>
+      <sec class="tecla" onclick="insert(' / ')">
+        <button class="tec" id="15" value="14">/</button>
+      </sec>
+      <sec class="tecla" onclick="insert(' * ')">
+        <button class="tec" id="16" value="15">X</button>
+      </sec>
+      <sec class="tecla" onclick="reset()">
+        <button class="tec" id="reset" value="reset">RESET</button>
+      </sec>
+      <sec class="tecIgual" onclick="calc()">
+        <button class="igual" id="igual" value="=">=</button>
+      </sec>
+    </div>
+  </main>
+</body>
+</html>
