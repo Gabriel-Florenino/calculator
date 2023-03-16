@@ -8,7 +8,8 @@
     Ela também suporta entrada tanto por clique do mouse quanto por teclado.</p>
 </div>
 <div>
-  <img src="">
+  <img style="width:100%;"src="design/telas-mobile.png">
+  <img style="width:100%;"src="design/descktop.png">
 </div>
 
 <div>
@@ -24,7 +25,7 @@
     A tela da calculadora é composta por uma caixa de entrada de texto e botões para operações matemáticas, números e outros botões funcionais.</p>
 </div>
 <div>
-  <img src="">
+  <img style="width:100%;"src="design/funcionamento.png">
 </div>
 
 <div>
