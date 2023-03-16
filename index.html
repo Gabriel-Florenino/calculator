@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body class="body-theme-one">
+  <!-- Header of aplication -->
+  <header class="header-theme-one">
+    <h1>Calculator</h1>
+    <!-- Section of colors the theme -->
+    <section>
+      <p></p>
+      <p class="select-theme">1  2  3</p>
+      <p class="theme">THEME</p>
+      <button class="btn-toogle btn-toogle-theme-one">
+          <p class="circle-the-toogle circle-the-toogle-theme-one"onclick="changeColor()"> </p>
+      </button>
+    </section>
+  </header>
+  <!-- Main of aplication -->
+  <main>
+    <!-- Screen of calculator -->
+    <div class="screen-calculator screen-calculator-theme-one">
+      <h1 id="display-of-screen"></h1>
+    </div>
+    <!-- Body of calculator -->
+    <div class="body-of-calculator body-of-calculator-theme-one">
+      <button onclick="insert(7)" class="tec tec-theme-one">7</button>
+      <button onclick="insert(8)" class="tec tec-theme-one">8</button>
+      <button onclick="insert(9)" class="tec tec-theme-one">9</button>
+      <button onclick="del()" class="tec tec-del" id="tec-del-theme-one">DEL</button>
+      <button onclick="insert(4)" class="tec tec-theme-one">4</button>
+      <button onclick="insert(5)" class="tec tec-theme-one">5</button>
+      <button onclick="insert(6)" class="tec tec-theme-one">6</button>
+      <button onclick="insert('+')" class="tec tec-theme-one">+</button>
+      <button onclick="insert(1)" class="tec tec-theme-one">1</button>
+      <button onclick="insert(2)" class="tec tec-theme-one">2</button>
+      <button onclick="insert(3)" class="tec tec-theme-one">3</button>
+      <button onclick="insert('-')" class="tec tec-theme-one">-</button>
+      <button onclick="insert('.')" class="tec tec-theme-one">.</button>
+      <button onclick="insert(0)" class="tec tec-theme-one">0</button>
+      <button onclick="insert('/')" class="tec tec-theme-one">/</button>
+      <button onclick="insert('*')" class="tec tec-theme-one">X</button>
+      <button onclick="reset()" class="tec tec-reset" id="tec-reset-theme-one">RESET</button>
+      <button onclick="calc()" class="tec tec-igual" id="tec-igual-theme-one">=</button>
+    </div>
+  </main>
+</body>
+</html>
