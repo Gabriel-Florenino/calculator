@@ -1,6 +1,8 @@
 <div>
   <h1> Calculadora com troca de cores </h1>
-  Tecnologias utilizadas: HTML, CSS, JavaScript e jquery
+  Tecnologias utilizadas: <a href="https://developer.mozilla.org/pt-BR/">HTML</a>, <a href="https://developer.mozilla.org/pt-BR/">CSS</a>, 
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a> e 
+    <a href="https://jquery.com/">jquery</a>.</p>
   <p>Esta é uma calculadora simples e elegante que permite ao usuário executar cálculos básicos com facilidade. 
     A calculadora possui três modos de cores diferentes que podem ser mudados facilmente com um botão, localizado no canto superios direito da tela. 
     Ela também suporta entrada tanto por clique do mouse quanto por teclado.</p>
