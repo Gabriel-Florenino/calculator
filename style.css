@@ -1,208 +1,72 @@
-body{
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: hsl(222, 26%, 31%);
-    font-family:'League Spartan', sans-serif;;
-}
-header{
-    width: 495px    ;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    align-content: center;
-    color: white;
-    font-weight: 700;
-}
-main{
-    width: 500px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-}
-#screen{
-    width: 100%;
-    height: 35%;
-    background: hsl(224, 36%, 15%);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    color:  hsl(0, 0%, 100%);
-}
-#screen h1{
-    font-size: 60px;
-    margin: 0 15px 0 0;
-}
-#corp{
-    width: 92%;
-    height: 100%;
-    background-color: hsl(223, 31%, 20%);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 5%;
-    align-content: space-around;
-    flex-basis: 4;
-    padding: 5% 0 5% 0;
-    gap: 20px;
-    padding: 20px;
-}
-.tecla{
-    width: 20%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    flex-grow: 1;
-}
-.tecla button{
-    width: 100%;
-    height: 100%;
-    background-color: hsl(30, 25%, 89%);
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0px 5px hsl(28, 16%, 65%) ;
-    font-size: 30px;
-    font-weight: 700;
-    color: hsl(221, 14%, 31%);
-}
-.tecla button:hover{
-    background-color: white;
-}
-.tecIgual button{
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: 700;
-    background: hsl(6, 63%, 50%);
-    box-shadow: 0 5px hsl(6, 70%, 34%);
-    color: white;   
-}
-#igual:hover{
-    background: hsl(6, 78%, 67%);
-}
-.tecIgual{
-    width: 20%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    flex-grow: 1;
-}
-.tecla p{
-    margin: 0;
-    
-}
-#header section{
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    letter-spacing: 5px;
-    padding-bottom: 20px;
-}
-#reset{
-    background: hsl(225, 21%, 49%);
-    box-shadow: 0 5px hsl(224, 28%, 35%);
-    color: white;
-}
-#reset:hover{
-    background: hsl(226, 33%, 68%);
-}
-#igual{
-    background: hsl(6, 63%, 50%);
-    box-shadow: 0 5px hsl(6, 70%, 34%);
-    color: white;
-}
-#header section section{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    gap: 10px;
-}
-#header section section p{
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    letter-spacing: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left:5px ;
-}
-#header section section button{
-    width: 95px;
-    height: 35px;
-    border-radius: 35px;
-    border: 0;
-    margin: 0;
-    padding: 4px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background: hsl(223, 31%, 20%);
-}
-#button p{
-    margin: 0;
-    padding: 0;
-    width:27px;
-    height:27px;
-    border-radius: 20px;
-    background: hsl(6, 63%, 50%);
-}
-#button p:hover{
-    transform: scale(0.8);
-}
-@media (max-width: 768px) {
-    header{
-        width: 350px    ;
-        height: 15vh;
-    }
-    main{
-        width: 350px;
-        height: 500px;
-    }
-    #screen{
-        width: 350px;
-        height: 35%;
-    }
-    #corp{
-        width: 90%;
-        height: 100%;
-    }
-    #header section{
-        width: 43%;
-        font-size: 14px;
-        padding-bottom: 0px;
-    }
-    #header section section{
-        width: 100%;
-        gap: 5px;
-        transform: scale(0.75);
-    }
+/* General */
+*{box-sizing: border-box; font-family:'League Spartan', sans-serif; margin: 0; padding: 0;}
+body{width: 100vw;height: 100vh; max-height: 800px; display: flex;justify-content: center;align-items: center;flex-direction: column;}
 
-}
+/* Theme One */
+.body-theme-one{background-color: hsl(222, 26%, 31%);}
+.header-theme-one{color: white;}
+.btn-toogle-theme-one{background: hsl(223, 31%, 20%);justify-content: start}
+.circle-the-toogle-theme-one{background: hsl(6, 63%, 50%)}
+.screen-calculator-theme-one{background-color: hsl(224, 36%, 15%); color: white;}
+.body-of-calculator-theme-one{background:hsl(223, 31%, 20%);}
+#tec-reset-theme-one{background: hsl(225, 21%, 49%);box-shadow: 0 5px hsl(224, 28%, 35%);color: white;}
+#tec-reset-theme-one:hover{background: hsl(226, 33%, 68%);}
+#tec-del-theme-one{background: hsl(225, 21%, 49%);box-shadow: 0 5px hsl(224, 28%, 35%);color: white;}
+#tec-del-theme-one:hover{background: hsl(226, 33%, 68%);}
+#tec-igual-theme-one{background: hsl(6, 63%, 50%);box-shadow: 0 5px hsl(6, 70%, 34%);color: white;}
+#tec-igual-theme-one:hover{background: hsl(6, 78%, 67%);}
+.tec-theme-one{background-color: hsl(30, 25%, 89%);box-shadow: 0px 5px hsl(28, 16%, 65%) ;color: hsl(221, 14%, 31%);}
+.tec-theme-one:hover{background-color: white;}
+
+/* Theme two */
+.body-theme-two{background-color:hsl(268, 75%, 9%);}
+.header-theme-two{color: hsl(52, 100%, 62%);}
+.btn-toogle-theme-two{ background: hsl(268, 71%, 12%); justify-content: center}
+.circle-the-toogle-theme-two{background: hsl(177, 92%, 70%)}
+.screen-calculator-theme-two{background-color: hsl(268, 71%, 12%); color: hsl(52, 100%, 62%);}
+.body-of-calculator-theme-two{background:hsl(268, 71%, 12%);}
+#tec-reset-theme-two{background: hsl(281, 89%, 26%);box-shadow:0 5px hsl(285, 91%, 52%);color: white;}
+#tec-reset-theme-two:hover{background: hsl(286, 72%, 48%);}
+#tec-del-theme-two{background: hsl(281, 89%, 26%);box-shadow:0 5px hsl(285, 91%, 52%);color: white;}
+#tec-del-theme-two:hover{background: hsl(286, 72%, 48%);;}
+#tec-igual-theme-two{background:hsl(176, 100%, 44%);box-shadow: 0 5px hsl(177, 92%, 70%);color: hsl(198, 20%, 13%);}
+#tec-igual-theme-two:hover{background: hsl(177, 92%, 70%);}
+.tec-theme-two{background-color:hsl(268, 47%, 21%);box-shadow:0 5px hsl(290, 70%, 36%) ;color:hsl(52, 100%, 62%);}
+.tec-theme-two:hover{background-color: hsl(268, 45%, 46%);}
+
+/* Theme three */
+.body-theme-three{background-color: hsl(0, 0%, 90%);}
+.header-theme-three{color: hsl(60, 10%, 19%);}
+.btn-toogle-theme-three{ background: hsl(0, 5%, 81%); justify-content:flex-end;}
+.circle-the-toogle-theme-three{background:hsl(25, 98%, 40%)}
+.screen-calculator-theme-three{background-color:hsl(0, 0%, 93%); color: hsl(60, 10%, 19%);}
+.body-of-calculator-theme-three{background:hsl(0, 5%, 81%);}
+#tec-reset-theme-three{background:hsl(185, 42%, 37%);box-shadow: 0 5px hsl(185, 58%, 25%);color: white;}
+#tec-reset-theme-three:hover{background:hsl(184, 29%, 61%);}
+#tec-del-theme-three{background:hsl(185, 42%, 37%);box-shadow: 0 5px hsl(185, 58%, 25%);color: white;}
+#tec-del-theme-three:hover{background:hsl(184, 29%, 61%);}
+#tec-igual-theme-three{background: hsl(25, 98%, 40%);box-shadow: 0 5px hsl(25, 99%, 27%);color: white;}
+#tec-igual-theme-three:hover{background: hsl(25, 91%, 71%);}
+.tec-theme-three{background-color:hsl(45, 7%, 89%);box-shadow:0 5px hsl(35, 11%, 61%);color:hsl(60, 10%, 19%);}
+.tec-theme-three:hover{background-color: white;}
+
+/* Header of calculator */
+header{display: flex; flex-direction: row; justify-content: space-between; align-items:flex-end; padding: 10px; width: 90%; max-width: 400px;}
+header h1{font-size: 25px;}
+header section{display: grid;  grid-template-columns: 60px 60px;  grid-template-rows: 1fr 1fr; text-align: center; margin-bottom: 3px;
+    align-items: center; justify-items: center; gap: 3px;}
+.select-theme{letter-spacing: 5px; font-size: 12px; margin: 0; padding: 0;}
+.theme{font-size: 12px; letter-spacing: 3px;}
+.btn-toogle{height: 20px;border: 0; border-radius: 10px; padding: 0 5%; width: 100%; display: flex;flex-direction: row; align-items: center;}
+.btn-toogle p{width: 25%; height: 70%; border-radius: 75%; margin: 0; padding: 0;}
+.btn-toogle p:hover{transform: scale(0.8);} 
+/* Screen of calculator */
+main{width: 90%; max-width: 400px; padding: 10px; height: 50%;}
+.screen-calculator{width: 100%; height: 180%; max-height: 75px; border-radius: 5px; text-align: center;
+    display: flex; align-items: center; justify-content: end; padding: 20px;}
+/* Body of Calculator */
+.body-of-calculator{display: grid; width: 100%; padding: 6.5%;  align-items: center;grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr); margin: 5% 0 0 0; gap: 6.5%; height: 100%; border-radius: 5px;}
+.tec-reset{width: 100%; grid-column-start: 1;grid-column-end: 3;}
+.tec-igual{grid-column-start: 3;grid-column-end: 5;}
+.tec{width: 100%;height: 100%;border: 0;border-radius: 5px;font-size: 16px;font-weight: 700;}
